@@ -1,0 +1,17129 @@
+/
+    [comment]: /*
+ * Forked from Box2D.js
+ * @see https://github.com/kripken/box2d.js/blob/2816b45/Box2D_v2.3.1.idl
+ * @author dmagunov + alperencaliskan + fork contributions from Alex Birch
+ * @license Zlib https://opensource.org/licenses/Zlib
+ * License evidence: https://github.com/kripken/box2d.js/blob/master/README.markdown#box2djs
+ *   "box2d.js is zlib licensed, just like Box2D."
+ * Compatibility: Box2D v2.4.0+ @f0f9d50
+ */
+
+
+    [whitespace]: 
+
+
+[
+    [inline]: [
+N
+    [identifier]: NoDelete
+]
+    [inline]: ]
+
+
+    [whitespace]: 
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Contact
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: b2Manifold
+ 
+    [whitespace]:  
+G
+    [identifier]: GetManifold
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+G
+    [identifier]: GetWorldManifold
+(
+    [inline]: (
+b
+    [identifier]: b2WorldManifold
+ 
+    [whitespace]:  
+m
+    [identifier]: manifold
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+I
+    [identifier]: IsTouching
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetEnabled
+(
+    [inline]: (
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+f
+    [identifier]: flag
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+I
+    [identifier]: IsEnabled
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: b2Contact
+ 
+    [whitespace]:  
+G
+    [identifier]: GetNext
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: b2Fixture
+ 
+    [whitespace]:  
+G
+    [identifier]: GetFixtureA
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+l
+    [identifier]: long
+ 
+    [whitespace]:  
+G
+    [identifier]: GetChildIndexA
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: b2Fixture
+ 
+    [whitespace]:  
+G
+    [identifier]: GetFixtureB
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+l
+    [identifier]: long
+ 
+    [whitespace]:  
+G
+    [identifier]: GetChildIndexB
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetFriction
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+f
+    [identifier]: friction
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetFriction
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+R
+    [identifier]: ResetFriction
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetRestitution
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+r
+    [identifier]: restitution
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetRestitution
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+R
+    [identifier]: ResetRestitution
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetRestitutionThreshold
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+t
+    [identifier]: threshold
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetRestitutionThreshold
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+R
+    [identifier]: ResetRestitutionThreshold
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetTangentSpeed
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+s
+    [identifier]: speed
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetTangentSpeed
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2ContactListener
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+[
+    [inline]: [
+J
+    [identifier]: JSImplementation
+=
+    [inline]: =
+"
+    [string]: "b2ContactListener"
+]
+    [inline]: ]
+
+
+    [whitespace]: 
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+J
+    [identifier]: JSContactListener
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+J
+    [identifier]: JSContactListener
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+B
+    [identifier]: BeginContact
+(
+    [inline]: (
+b
+    [identifier]: b2Contact
+ 
+    [whitespace]:  
+c
+    [identifier]: contact
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+E
+    [identifier]: EndContact
+(
+    [inline]: (
+b
+    [identifier]: b2Contact
+ 
+    [whitespace]:  
+c
+    [identifier]: contact
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+P
+    [identifier]: PreSolve
+(
+    [inline]: (
+b
+    [identifier]: b2Contact
+ 
+    [whitespace]:  
+c
+    [identifier]: contact
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+C
+    [identifier]: Const
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Manifold
+ 
+    [whitespace]:  
+o
+    [identifier]: oldManifold
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+P
+    [identifier]: PostSolve
+(
+    [inline]: (
+b
+    [identifier]: b2Contact
+ 
+    [whitespace]:  
+c
+    [identifier]: contact
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+C
+    [identifier]: Const
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2ContactImpulse
+ 
+    [whitespace]:  
+i
+    [identifier]: impulse
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2World
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2World
+(
+    [inline]: (
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+g
+    [identifier]: gravity
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetDestructionListener
+(
+    [inline]: (
+b
+    [identifier]: b2DestructionListener
+ 
+    [whitespace]:  
+l
+    [identifier]: listener
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetContactFilter
+(
+    [inline]: (
+J
+    [identifier]: JSContactFilter
+ 
+    [whitespace]:  
+f
+    [identifier]: filter
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetContactListener
+(
+    [inline]: (
+J
+    [identifier]: JSContactListener
+ 
+    [whitespace]:  
+l
+    [identifier]: listener
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetDebugDraw
+(
+    [inline]: (
+b
+    [identifier]: b2Draw
+ 
+    [whitespace]:  
+d
+    [identifier]: debugDraw
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: b2Body
+ 
+    [whitespace]:  
+C
+    [identifier]: CreateBody
+(
+    [inline]: (
+[
+    [inline]: [
+C
+    [identifier]: Const
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2BodyDef
+ 
+    [whitespace]:  
+d
+    [identifier]: def
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+D
+    [identifier]: DestroyBody
+(
+    [inline]: (
+b
+    [identifier]: b2Body
+ 
+    [whitespace]:  
+b
+    [identifier]: body
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: b2Joint
+ 
+    [whitespace]:  
+C
+    [identifier]: CreateJoint
+(
+    [inline]: (
+[
+    [inline]: [
+C
+    [identifier]: Const
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2JointDef
+ 
+    [whitespace]:  
+d
+    [identifier]: def
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+D
+    [identifier]: DestroyJoint
+(
+    [inline]: (
+b
+    [identifier]: b2Joint
+ 
+    [whitespace]:  
+j
+    [identifier]: joint
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: Step
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+t
+    [identifier]: timeStep
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+l
+    [identifier]: long
+ 
+    [whitespace]:  
+v
+    [identifier]: velocityIterations
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+l
+    [identifier]: long
+ 
+    [whitespace]:  
+p
+    [identifier]: positionIterations
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+C
+    [identifier]: ClearForces
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+D
+    [identifier]: DebugDraw
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+Q
+    [identifier]: QueryAABB
+(
+    [inline]: (
+b
+    [identifier]: b2QueryCallback
+ 
+    [whitespace]:  
+c
+    [identifier]: callback
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2AABB
+ 
+    [whitespace]:  
+a
+    [identifier]: aabb
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+R
+    [identifier]: RayCast
+(
+    [inline]: (
+b
+    [identifier]: b2RayCastCallback
+ 
+    [whitespace]:  
+c
+    [identifier]: callback
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+p
+    [identifier]: point1
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+p
+    [identifier]: point2
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: b2Body
+ 
+    [whitespace]:  
+G
+    [identifier]: GetBodyList
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: b2Joint
+ 
+    [whitespace]:  
+G
+    [identifier]: GetJointList
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: b2Contact
+ 
+    [whitespace]:  
+G
+    [identifier]: GetContactList
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetAllowSleeping
+(
+    [inline]: (
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+f
+    [identifier]: flag
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+G
+    [identifier]: GetAllowSleeping
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetWarmStarting
+(
+    [inline]: (
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+f
+    [identifier]: flag
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+G
+    [identifier]: GetWarmStarting
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetContinuousPhysics
+(
+    [inline]: (
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+f
+    [identifier]: flag
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+G
+    [identifier]: GetContinuousPhysics
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetSubStepping
+(
+    [inline]: (
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+f
+    [identifier]: flag
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+G
+    [identifier]: GetSubStepping
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+l
+    [identifier]: long
+ 
+    [whitespace]:  
+G
+    [identifier]: GetProxyCount
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+l
+    [identifier]: long
+ 
+    [whitespace]:  
+G
+    [identifier]: GetBodyCount
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+l
+    [identifier]: long
+ 
+    [whitespace]:  
+G
+    [identifier]: GetJointCount
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+l
+    [identifier]: long
+ 
+    [whitespace]:  
+G
+    [identifier]: GetContactCount
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+l
+    [identifier]: long
+ 
+    [whitespace]:  
+G
+    [identifier]: GetTreeHeight
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+l
+    [identifier]: long
+ 
+    [whitespace]:  
+G
+    [identifier]: GetTreeBalance
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetTreeQuality
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetGravity
+(
+    [inline]: (
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+g
+    [identifier]: gravity
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+G
+    [identifier]: GetGravity
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+I
+    [identifier]: IsLocked
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetAutoClearForces
+(
+    [inline]: (
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+f
+    [identifier]: flag
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+G
+    [identifier]: GetAutoClearForces
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Profile
+ 
+    [whitespace]:  
+G
+    [identifier]: GetProfile
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+D
+    [identifier]: Dump
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+e
+    [identifier]: enum
+ 
+    [whitespace]:  
+b
+    [identifier]: b2ShapeType
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+"
+    [string]: "b2Shape::e_circle"
+,
+    [inline]: ,
+
+
+    [whitespace]: 
+  
+"
+    [string]: "b2Shape::e_edge"
+,
+    [inline]: ,
+
+
+    [whitespace]: 
+  
+"
+    [string]: "b2Shape::e_polygon"
+,
+    [inline]: ,
+
+
+    [whitespace]: 
+  
+"
+    [string]: "b2Shape::e_chain"
+,
+    [inline]: ,
+
+
+    [whitespace]: 
+  
+"
+    [string]: "b2Shape::e_typeCount"
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Shape
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: b2ShapeType
+ 
+    [whitespace]:  
+G
+    [identifier]: GetType
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+l
+    [identifier]: long
+ 
+    [whitespace]:  
+G
+    [identifier]: GetChildCount
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+T
+    [identifier]: TestPoint
+(
+    [inline]: (
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Transform
+ 
+    [whitespace]:  
+x
+    [identifier]: xf
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+p
+    [identifier]: p
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+R
+    [identifier]: RayCast
+(
+    [inline]: (
+b
+    [identifier]: b2RayCastOutput
+ 
+    [whitespace]:  
+o
+    [identifier]: output
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2RayCastInput
+ 
+    [whitespace]:  
+i
+    [identifier]: input
+,
+    [inline]: ,
+
+
+    [whitespace]: 
+                  
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Transform
+ 
+    [whitespace]:  
+t
+    [identifier]: transform
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+l
+    [identifier]: long
+ 
+    [whitespace]:  
+c
+    [identifier]: childIndex
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+C
+    [identifier]: ComputeAABB
+(
+    [inline]: (
+b
+    [identifier]: b2AABB
+ 
+    [whitespace]:  
+a
+    [identifier]: aabb
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Transform
+ 
+    [whitespace]:  
+x
+    [identifier]: xf
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+l
+    [identifier]: long
+ 
+    [whitespace]:  
+c
+    [identifier]: childIndex
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+C
+    [identifier]: ComputeMass
+(
+    [inline]: (
+b
+    [identifier]: b2MassData
+ 
+    [whitespace]:  
+m
+    [identifier]: massData
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+d
+    [identifier]: density
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2ShapeType
+ 
+    [whitespace]:  
+m
+    [identifier]: m_type
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+m
+    [identifier]: m_radius
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2FixtureUserData
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+u
+    [identifier]: unsigned
+ 
+    [whitespace]:  
+l
+    [identifier]: long
+ 
+    [whitespace]:  
+p
+    [identifier]: pointer
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2FixtureDef
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2FixtureDef
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+C
+    [identifier]: Const
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Shape
+ 
+    [whitespace]:  
+s
+    [identifier]: shape
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2FixtureUserData
+ 
+    [whitespace]:  
+u
+    [identifier]: userData
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+f
+    [identifier]: friction
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+r
+    [identifier]: restitution
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+r
+    [identifier]: restitutionThreshold
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+d
+    [identifier]: density
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+i
+    [identifier]: isSensor
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Filter
+ 
+    [whitespace]:  
+f
+    [identifier]: filter
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Fixture
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: b2ShapeType
+ 
+    [whitespace]:  
+G
+    [identifier]: GetType
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: b2Shape
+ 
+    [whitespace]:  
+G
+    [identifier]: GetShape
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetSensor
+(
+    [inline]: (
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+s
+    [identifier]: sensor
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+I
+    [identifier]: IsSensor
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetFilterData
+(
+    [inline]: (
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Filter
+ 
+    [whitespace]:  
+f
+    [identifier]: filter
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Filter
+ 
+    [whitespace]:  
+G
+    [identifier]: GetFilterData
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+R
+    [identifier]: Refilter
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: b2Body
+ 
+    [whitespace]:  
+G
+    [identifier]: GetBody
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: b2Fixture
+ 
+    [whitespace]:  
+G
+    [identifier]: GetNext
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2FixtureUserData
+ 
+    [whitespace]:  
+G
+    [identifier]: GetUserData
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+T
+    [identifier]: TestPoint
+(
+    [inline]: (
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+p
+    [identifier]: p
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+R
+    [identifier]: RayCast
+(
+    [inline]: (
+b
+    [identifier]: b2RayCastOutput
+ 
+    [whitespace]:  
+o
+    [identifier]: output
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2RayCastInput
+ 
+    [whitespace]:  
+i
+    [identifier]: input
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+l
+    [identifier]: long
+ 
+    [whitespace]:  
+c
+    [identifier]: childIndex
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+G
+    [identifier]: GetMassData
+(
+    [inline]: (
+b
+    [identifier]: b2MassData
+ 
+    [whitespace]:  
+m
+    [identifier]: massData
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetDensity
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+d
+    [identifier]: density
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetDensity
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetFriction
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetFriction
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+f
+    [identifier]: friction
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetRestitution
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetRestitution
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+r
+    [identifier]: restitution
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetRestitutionThreshold
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetRestitutionThreshold
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+t
+    [identifier]: threshold
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2AABB
+ 
+    [whitespace]:  
+G
+    [identifier]: GetAABB
+(
+    [inline]: (
+l
+    [identifier]: long
+ 
+    [whitespace]:  
+c
+    [identifier]: childIndex
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+D
+    [identifier]: Dump
+(
+    [inline]: (
+l
+    [identifier]: long
+ 
+    [whitespace]:  
+b
+    [identifier]: bodyIndex
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Transform
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Transform
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Transform
+(
+    [inline]: (
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+p
+    [identifier]: position
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Rot
+ 
+    [whitespace]:  
+r
+    [identifier]: rotation
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetIdentity
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: Set
+(
+    [inline]: (
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+p
+    [identifier]: position
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+a
+    [identifier]: angle
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+p
+    [identifier]: p
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Rot
+ 
+    [whitespace]:  
+q
+    [identifier]: q
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2RayCastCallback
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+[
+    [inline]: [
+J
+    [identifier]: JSImplementation
+=
+    [inline]: =
+"
+    [string]: "b2RayCastCallback"
+]
+    [inline]: ]
+
+
+    [whitespace]: 
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+J
+    [identifier]: JSRayCastCallback
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+J
+    [identifier]: JSRayCastCallback
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+R
+    [identifier]: ReportFixture
+(
+    [inline]: (
+b
+    [identifier]: b2Fixture
+ 
+    [whitespace]:  
+f
+    [identifier]: fixture
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+p
+    [identifier]: point
+,
+    [inline]: ,
+
+
+    [whitespace]: 
+                      
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+n
+    [identifier]: normal
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+f
+    [identifier]: fraction
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2QueryCallback
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+[
+    [inline]: [
+J
+    [identifier]: JSImplementation
+=
+    [inline]: =
+"
+    [string]: "b2QueryCallback"
+]
+    [inline]: ]
+
+
+    [whitespace]: 
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+J
+    [identifier]: JSQueryCallback
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+J
+    [identifier]: JSQueryCallback
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+R
+    [identifier]: ReportFixture
+(
+    [inline]: (
+b
+    [identifier]: b2Fixture
+ 
+    [whitespace]:  
+f
+    [identifier]: fixture
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2MassData
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2MassData
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+m
+    [identifier]: mass
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+c
+    [identifier]: center
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+I
+    [identifier]: I
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+x
+    [identifier]: x
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+y
+    [identifier]: y
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetZero
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: Set
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+x
+    [identifier]: x
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+y
+    [identifier]: y
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+O
+    [identifier]: Operator
+=
+    [inline]: =
+"
+    [string]: "+="
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+o
+    [identifier]: op_add
+(
+    [inline]: (
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+v
+    [identifier]: v
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+O
+    [identifier]: Operator
+=
+    [inline]: =
+"
+    [string]: "-="
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+o
+    [identifier]: op_sub
+(
+    [inline]: (
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+v
+    [identifier]: v
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+O
+    [identifier]: Operator
+=
+    [inline]: =
+"
+    [string]: "*="
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+o
+    [identifier]: op_mul
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+s
+    [identifier]: s
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+L
+    [identifier]: Length
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+L
+    [identifier]: LengthSquared
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+N
+    [identifier]: Normalize
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+I
+    [identifier]: IsValid
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+S
+    [identifier]: Skew
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+x
+    [identifier]: x
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+y
+    [identifier]: y
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec3
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec3
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec3
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+x
+    [identifier]: x
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+y
+    [identifier]: y
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+z
+    [identifier]: z
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetZero
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: Set
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+x
+    [identifier]: x
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+y
+    [identifier]: y
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+z
+    [identifier]: z
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+O
+    [identifier]: Operator
+=
+    [inline]: =
+"
+    [string]: "+="
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+o
+    [identifier]: op_add
+(
+    [inline]: (
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec3
+ 
+    [whitespace]:  
+v
+    [identifier]: v
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+O
+    [identifier]: Operator
+=
+    [inline]: =
+"
+    [string]: "-="
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+o
+    [identifier]: op_sub
+(
+    [inline]: (
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec3
+ 
+    [whitespace]:  
+v
+    [identifier]: v
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+O
+    [identifier]: Operator
+=
+    [inline]: =
+"
+    [string]: "*="
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+o
+    [identifier]: op_mul
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+s
+    [identifier]: s
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+x
+    [identifier]: x
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+y
+    [identifier]: y
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+z
+    [identifier]: z
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2BodyUserData
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+u
+    [identifier]: unsigned
+ 
+    [whitespace]:  
+l
+    [identifier]: long
+ 
+    [whitespace]:  
+p
+    [identifier]: pointer
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+[
+    [inline]: [
+N
+    [identifier]: NoDelete
+]
+    [inline]: ]
+
+
+    [whitespace]: 
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Body
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: b2Fixture
+ 
+    [whitespace]:  
+C
+    [identifier]: CreateFixture
+(
+    [inline]: (
+b
+    [identifier]: b2FixtureDef
+ 
+    [whitespace]:  
+d
+    [identifier]: def
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: b2Fixture
+ 
+    [whitespace]:  
+C
+    [identifier]: CreateFixture
+(
+    [inline]: (
+b
+    [identifier]: b2Shape
+ 
+    [whitespace]:  
+s
+    [identifier]: shape
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+d
+    [identifier]: density
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+D
+    [identifier]: DestroyFixture
+(
+    [inline]: (
+b
+    [identifier]: b2Fixture
+ 
+    [whitespace]:  
+f
+    [identifier]: fixture
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetTransform
+(
+    [inline]: (
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+p
+    [identifier]: position
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+a
+    [identifier]: angle
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Transform
+ 
+    [whitespace]:  
+G
+    [identifier]: GetTransform
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+G
+    [identifier]: GetPosition
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetAngle
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+G
+    [identifier]: GetWorldCenter
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+G
+    [identifier]: GetLocalCenter
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetLinearVelocity
+(
+    [inline]: (
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+v
+    [identifier]: v
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+G
+    [identifier]: GetLinearVelocity
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetAngularVelocity
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+o
+    [identifier]: omega
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetAngularVelocity
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+A
+    [identifier]: ApplyForce
+(
+    [inline]: (
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+f
+    [identifier]: force
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+p
+    [identifier]: point
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+w
+    [identifier]: wake
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+A
+    [identifier]: ApplyForceToCenter
+(
+    [inline]: (
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+f
+    [identifier]: force
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+w
+    [identifier]: wake
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+A
+    [identifier]: ApplyTorque
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+t
+    [identifier]: torque
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+a
+    [identifier]: awake
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+A
+    [identifier]: ApplyLinearImpulse
+(
+    [inline]: (
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+i
+    [identifier]: impulse
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+p
+    [identifier]: point
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+w
+    [identifier]: wake
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+A
+    [identifier]: ApplyLinearImpulseToCenter
+(
+    [inline]: (
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+i
+    [identifier]: impulse
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+w
+    [identifier]: wake
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+A
+    [identifier]: ApplyAngularImpulse
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+i
+    [identifier]: impulse
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+w
+    [identifier]: wake
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetMass
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetInertia
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+G
+    [identifier]: GetMassData
+(
+    [inline]: (
+b
+    [identifier]: b2MassData
+ 
+    [whitespace]:  
+d
+    [identifier]: data
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetMassData
+(
+    [inline]: (
+[
+    [inline]: [
+C
+    [identifier]: Const
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2MassData
+ 
+    [whitespace]:  
+d
+    [identifier]: data
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+R
+    [identifier]: ResetMassData
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+G
+    [identifier]: GetWorldPoint
+(
+    [inline]: (
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+l
+    [identifier]: localPoint
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+G
+    [identifier]: GetWorldVector
+(
+    [inline]: (
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+l
+    [identifier]: localVector
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+G
+    [identifier]: GetLocalPoint
+(
+    [inline]: (
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+w
+    [identifier]: worldPoint
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+G
+    [identifier]: GetLocalVector
+(
+    [inline]: (
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+w
+    [identifier]: worldVector
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+G
+    [identifier]: GetLinearVelocityFromWorldPoint
+(
+    [inline]: (
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+w
+    [identifier]: worldPoint
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+G
+    [identifier]: GetLinearVelocityFromLocalPoint
+(
+    [inline]: (
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+l
+    [identifier]: localPoint
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetLinearDamping
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetLinearDamping
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+l
+    [identifier]: linearDamping
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetAngularDamping
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetAngularDamping
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+a
+    [identifier]: angularDamping
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetGravityScale
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetGravityScale
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+s
+    [identifier]: scale
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetType
+(
+    [inline]: (
+b
+    [identifier]: b2BodyType
+ 
+    [whitespace]:  
+t
+    [identifier]: type
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: b2BodyType
+ 
+    [whitespace]:  
+G
+    [identifier]: GetType
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetBullet
+(
+    [inline]: (
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+f
+    [identifier]: flag
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+I
+    [identifier]: IsBullet
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetSleepingAllowed
+(
+    [inline]: (
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+f
+    [identifier]: flag
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+I
+    [identifier]: IsSleepingAllowed
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetAwake
+(
+    [inline]: (
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+f
+    [identifier]: flag
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+I
+    [identifier]: IsAwake
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetEnabled
+(
+    [inline]: (
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+f
+    [identifier]: flag
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+I
+    [identifier]: IsEnabled
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetFixedRotation
+(
+    [inline]: (
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+f
+    [identifier]: flag
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+I
+    [identifier]: IsFixedRotation
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+/
+    [comment]: // a const overload also exists, which we cannot easily expose
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: b2Fixture
+ 
+    [whitespace]:  
+G
+    [identifier]: GetFixtureList
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+/
+    [comment]: // a const overload also exists, which we cannot easily expose
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: b2JointEdge
+ 
+    [whitespace]:  
+G
+    [identifier]: GetJointList
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+/
+    [comment]: // a const overload also exists, which we cannot easily expose
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: b2ContactEdge
+ 
+    [whitespace]:  
+G
+    [identifier]: GetContactList
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+/
+    [comment]: // a const overload also exists, which we cannot easily expose
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: b2Body
+ 
+    [whitespace]:  
+G
+    [identifier]: GetNext
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2BodyUserData
+ 
+    [whitespace]:  
+G
+    [identifier]: GetUserData
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: b2World
+ 
+    [whitespace]:  
+G
+    [identifier]: GetWorld
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+D
+    [identifier]: Dump
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+e
+    [identifier]: enum
+ 
+    [whitespace]:  
+b
+    [identifier]: b2BodyType
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+"
+    [string]: "b2_staticBody"
+,
+    [inline]: ,
+
+
+    [whitespace]: 
+  
+"
+    [string]: "b2_kinematicBody"
+,
+    [inline]: ,
+
+
+    [whitespace]: 
+  
+"
+    [string]: "b2_dynamicBody"
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2BodyDef
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2BodyDef
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2BodyType
+ 
+    [whitespace]:  
+t
+    [identifier]: type
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+p
+    [identifier]: position
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+a
+    [identifier]: angle
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+l
+    [identifier]: linearVelocity
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+a
+    [identifier]: angularVelocity
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+l
+    [identifier]: linearDamping
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+a
+    [identifier]: angularDamping
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+a
+    [identifier]: allowSleep
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+a
+    [identifier]: awake
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+f
+    [identifier]: fixedRotation
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+b
+    [identifier]: bullet
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+e
+    [identifier]: enabled
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2BodyUserData
+ 
+    [whitespace]:  
+u
+    [identifier]: userData
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+g
+    [identifier]: gravityScale
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Filter
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Filter
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+u
+    [identifier]: unsigned
+ 
+    [whitespace]:  
+s
+    [identifier]: short
+ 
+    [whitespace]:  
+c
+    [identifier]: categoryBits
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+u
+    [identifier]: unsigned
+ 
+    [whitespace]:  
+s
+    [identifier]: short
+ 
+    [whitespace]:  
+m
+    [identifier]: maskBits
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+s
+    [identifier]: short
+ 
+    [whitespace]:  
+g
+    [identifier]: groupIndex
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2AABB
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2AABB
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+I
+    [identifier]: IsValid
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+G
+    [identifier]: GetCenter
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+G
+    [identifier]: GetExtents
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetPerimeter
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+C
+    [identifier]: Combine
+(
+    [inline]: (
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2AABB
+ 
+    [whitespace]:  
+a
+    [identifier]: aabb
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+C
+    [identifier]: Combine
+(
+    [inline]: (
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2AABB
+ 
+    [whitespace]:  
+a
+    [identifier]: aabb1
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2AABB
+ 
+    [whitespace]:  
+a
+    [identifier]: aabb2
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+C
+    [identifier]: Contains
+(
+    [inline]: (
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2AABB
+ 
+    [whitespace]:  
+a
+    [identifier]: aabb
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+R
+    [identifier]: RayCast
+(
+    [inline]: (
+b
+    [identifier]: b2RayCastOutput
+ 
+    [whitespace]:  
+o
+    [identifier]: output
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2RayCastInput
+ 
+    [whitespace]:  
+i
+    [identifier]: input
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+l
+    [identifier]: lowerBound
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+u
+    [identifier]: upperBound
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2CircleShape
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2CircleShape
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+m
+    [identifier]: m_p
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+b
+    [identifier]: b2CircleShape
+ 
+    [whitespace]:  
+i
+    [identifier]: implements
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Shape
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2EdgeShape
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2EdgeShape
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetOneSided
+(
+    [inline]: (
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+v
+    [identifier]: v0
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+v
+    [identifier]: v1
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+v
+    [identifier]: v2
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+v
+    [identifier]: v3
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetTwoSided
+(
+    [inline]: (
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+v
+    [identifier]: v1
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+v
+    [identifier]: v2
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+m
+    [identifier]: m_vertex1
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+m
+    [identifier]: m_vertex2
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+m
+    [identifier]: m_vertex0
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+m
+    [identifier]: m_vertex3
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+m
+    [identifier]: m_oneSided
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+b
+    [identifier]: b2EdgeShape
+ 
+    [whitespace]:  
+i
+    [identifier]: implements
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Shape
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+e
+    [identifier]: enum
+ 
+    [whitespace]:  
+b
+    [identifier]: b2JointType
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+"
+    [string]: "e_unknownJoint"
+,
+    [inline]: ,
+
+
+    [whitespace]: 
+  
+"
+    [string]: "e_revoluteJoint"
+,
+    [inline]: ,
+
+
+    [whitespace]: 
+  
+"
+    [string]: "e_prismaticJoint"
+,
+    [inline]: ,
+
+
+    [whitespace]: 
+  
+"
+    [string]: "e_distanceJoint"
+,
+    [inline]: ,
+
+
+    [whitespace]: 
+  
+"
+    [string]: "e_pulleyJoint"
+,
+    [inline]: ,
+
+
+    [whitespace]: 
+  
+"
+    [string]: "e_mouseJoint"
+,
+    [inline]: ,
+
+
+    [whitespace]: 
+  
+"
+    [string]: "e_gearJoint"
+,
+    [inline]: ,
+
+
+    [whitespace]: 
+  
+"
+    [string]: "e_wheelJoint"
+,
+    [inline]: ,
+
+
+    [whitespace]: 
+  
+"
+    [string]: "e_weldJoint"
+,
+    [inline]: ,
+
+
+    [whitespace]: 
+  
+"
+    [string]: "e_frictionJoint"
+,
+    [inline]: ,
+
+
+    [whitespace]: 
+  
+"
+    [string]: "e_ropeJoint"
+,
+    [inline]: ,
+
+
+    [whitespace]: 
+  
+"
+    [string]: "e_motorJoint"
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2JointUserData
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+u
+    [identifier]: unsigned
+ 
+    [whitespace]:  
+l
+    [identifier]: long
+ 
+    [whitespace]:  
+p
+    [identifier]: pointer
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2JointDef
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2JointDef
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2JointType
+ 
+    [whitespace]:  
+t
+    [identifier]: type
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2JointUserData
+ 
+    [whitespace]:  
+u
+    [identifier]: userData
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Body
+ 
+    [whitespace]:  
+b
+    [identifier]: bodyA
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Body
+ 
+    [whitespace]:  
+b
+    [identifier]: bodyB
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+c
+    [identifier]: collideConnected
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+[
+    [inline]: [
+N
+    [identifier]: NoDelete
+]
+    [inline]: ]
+
+
+    [whitespace]: 
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Joint
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: b2JointType
+ 
+    [whitespace]:  
+G
+    [identifier]: GetType
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: b2Body
+ 
+    [whitespace]:  
+G
+    [identifier]: GetBodyA
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: b2Body
+ 
+    [whitespace]:  
+G
+    [identifier]: GetBodyB
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+G
+    [identifier]: GetAnchorA
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+G
+    [identifier]: GetAnchorB
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+G
+    [identifier]: GetReactionForce
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+i
+    [identifier]: inv_dt
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetReactionTorque
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+i
+    [identifier]: inv_dt
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: b2Joint
+ 
+    [whitespace]:  
+G
+    [identifier]: GetNext
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2JointUserData
+ 
+    [whitespace]:  
+G
+    [identifier]: GetUserData
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+G
+    [identifier]: GetCollideConnected
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+D
+    [identifier]: Dump
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2WeldJoint
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+G
+    [identifier]: GetLocalAnchorA
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+G
+    [identifier]: GetLocalAnchorB
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetReferenceAngle
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetStiffness
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+s
+    [identifier]: stiffness
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetStiffness
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetDamping
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+d
+    [identifier]: damping
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetDamping
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+D
+    [identifier]: Dump
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+b
+    [identifier]: b2WeldJoint
+ 
+    [whitespace]:  
+i
+    [identifier]: implements
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Joint
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2WeldJointDef
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2WeldJointDef
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+I
+    [identifier]: Initialize
+(
+    [inline]: (
+b
+    [identifier]: b2Body
+ 
+    [whitespace]:  
+b
+    [identifier]: bodyA
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Body
+ 
+    [whitespace]:  
+b
+    [identifier]: bodyB
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+a
+    [identifier]: anchor
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+l
+    [identifier]: localAnchorA
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+l
+    [identifier]: localAnchorB
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+r
+    [identifier]: referenceAngle
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+s
+    [identifier]: stiffness
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+d
+    [identifier]: damping
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+b
+    [identifier]: b2WeldJointDef
+ 
+    [whitespace]:  
+i
+    [identifier]: implements
+ 
+    [whitespace]:  
+b
+    [identifier]: b2JointDef
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2ChainShape
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2ChainShape
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+C
+    [identifier]: Clear
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+C
+    [identifier]: CreateLoop
+(
+    [inline]: (
+[
+    [inline]: [
+C
+    [identifier]: Const
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+v
+    [identifier]: vertices
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+l
+    [identifier]: long
+ 
+    [whitespace]:  
+c
+    [identifier]: count
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+C
+    [identifier]: CreateChain
+(
+    [inline]: (
+[
+    [inline]: [
+C
+    [identifier]: Const
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+v
+    [identifier]: vertices
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+l
+    [identifier]: long
+ 
+    [whitespace]:  
+c
+    [identifier]: count
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+p
+    [identifier]: prevVertex
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+n
+    [identifier]: nextVertex
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+G
+    [identifier]: GetChildEdge
+(
+    [inline]: (
+b
+    [identifier]: b2EdgeShape
+ 
+    [whitespace]:  
+e
+    [identifier]: edge
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+l
+    [identifier]: long
+ 
+    [whitespace]:  
+i
+    [identifier]: index
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+m
+    [identifier]: m_vertices
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+l
+    [identifier]: long
+ 
+    [whitespace]:  
+m
+    [identifier]: m_count
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+m
+    [identifier]: m_prevVertex
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+m
+    [identifier]: m_nextVertex
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+b
+    [identifier]: b2ChainShape
+ 
+    [whitespace]:  
+i
+    [identifier]: implements
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Shape
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Color
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Color
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Color
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+r
+    [identifier]: r
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+g
+    [identifier]: g
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+b
+    [identifier]: b
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: Set
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+r
+    [identifier]: ri
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+g
+    [identifier]: gi
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+b
+    [identifier]: bi
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+r
+    [identifier]: r
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+g
+    [identifier]: g
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+b
+    [identifier]: b
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2ContactEdge
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2ContactEdge
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Body
+ 
+    [whitespace]:  
+o
+    [identifier]: other
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Contact
+ 
+    [whitespace]:  
+c
+    [identifier]: contact
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2ContactEdge
+ 
+    [whitespace]:  
+p
+    [identifier]: prev
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2ContactEdge
+ 
+    [whitespace]:  
+n
+    [identifier]: next
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+e
+    [identifier]: enum
+ 
+    [whitespace]:  
+b
+    [identifier]: b2ContactFeatureType
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+"
+    [string]: "b2ContactFeature::e_vertex"
+,
+    [inline]: ,
+
+
+    [whitespace]: 
+  
+"
+    [string]: "b2ContactFeature::e_face"
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2ContactFeature
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+o
+    [identifier]: octet
+ 
+    [whitespace]:  
+i
+    [identifier]: indexA
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+o
+    [identifier]: octet
+ 
+    [whitespace]:  
+i
+    [identifier]: indexB
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+o
+    [identifier]: octet
+ 
+    [whitespace]:  
+t
+    [identifier]: typeA
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+o
+    [identifier]: octet
+ 
+    [whitespace]:  
+t
+    [identifier]: typeB
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2ContactFilter
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+[
+    [inline]: [
+J
+    [identifier]: JSImplementation
+=
+    [inline]: =
+"
+    [string]: "b2ContactFilter"
+]
+    [inline]: ]
+
+
+    [whitespace]: 
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+J
+    [identifier]: JSContactFilter
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+J
+    [identifier]: JSContactFilter
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+S
+    [identifier]: ShouldCollide
+(
+    [inline]: (
+b
+    [identifier]: b2Fixture
+ 
+    [whitespace]:  
+f
+    [identifier]: fixtureA
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Fixture
+ 
+    [whitespace]:  
+f
+    [identifier]: fixtureB
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2ContactID
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2ContactFeature
+ 
+    [whitespace]:  
+c
+    [identifier]: cf
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+u
+    [identifier]: unsigned
+ 
+    [whitespace]:  
+l
+    [identifier]: long
+ 
+    [whitespace]:  
+k
+    [identifier]: key
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2ContactImpulse
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+/
+    [comment]: // length 2
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+B
+    [identifier]: BoundsChecked
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+[
+    [inline]: [
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+n
+    [identifier]: normalImpulses
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+/
+    [comment]: // length 2
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+B
+    [identifier]: BoundsChecked
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+[
+    [inline]: [
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+t
+    [identifier]: tangentImpulses
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+l
+    [identifier]: long
+ 
+    [whitespace]:  
+c
+    [identifier]: count
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2DestructionListener
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2DestructionListenerWrapper
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+[
+    [inline]: [
+J
+    [identifier]: JSImplementation
+=
+    [inline]: =
+"
+    [string]: "b2DestructionListenerWrapper"
+]
+    [inline]: ]
+
+
+    [whitespace]: 
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+J
+    [identifier]: JSDestructionListener
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+J
+    [identifier]: JSDestructionListener
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+/
+    [comment]: // These methods map the overloaded methods from b2DestructionListener onto differently-named
+
+
+    [whitespace]: 
+  
+/
+    [comment]: // methods, so that it is possible to implement both of them in JS.
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SayGoodbyeJoint
+(
+    [inline]: (
+b
+    [identifier]: b2Joint
+ 
+    [whitespace]:  
+j
+    [identifier]: joint
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SayGoodbyeFixture
+(
+    [inline]: (
+b
+    [identifier]: b2Fixture
+ 
+    [whitespace]:  
+j
+    [identifier]: joint
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2DistanceJoint
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+G
+    [identifier]: GetLocalAnchorA
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+G
+    [identifier]: GetLocalAnchorB
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetLength
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetLength
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+l
+    [identifier]: length
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetMinLength
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetMinLength
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+m
+    [identifier]: minLength
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetMaxLength
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetMaxLength
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+m
+    [identifier]: maxLength
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetCurrentLength
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetStiffness
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+s
+    [identifier]: stiffness
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetStiffness
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetDamping
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+d
+    [identifier]: damping
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetDamping
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+b
+    [identifier]: b2DistanceJoint
+ 
+    [whitespace]:  
+i
+    [identifier]: implements
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Joint
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2DistanceJointDef
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2DistanceJointDef
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+I
+    [identifier]: Initialize
+(
+    [inline]: (
+b
+    [identifier]: b2Body
+ 
+    [whitespace]:  
+b
+    [identifier]: bodyA
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Body
+ 
+    [whitespace]:  
+b
+    [identifier]: bodyB
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+a
+    [identifier]: anchorA
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+a
+    [identifier]: anchorB
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+l
+    [identifier]: localAnchorA
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+l
+    [identifier]: localAnchorB
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+l
+    [identifier]: length
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+m
+    [identifier]: minLength
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+m
+    [identifier]: maxLength
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+s
+    [identifier]: stiffness
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+d
+    [identifier]: damping
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+b
+    [identifier]: b2DistanceJointDef
+ 
+    [whitespace]:  
+i
+    [identifier]: implements
+ 
+    [whitespace]:  
+b
+    [identifier]: b2JointDef
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+e
+    [identifier]: enum
+ 
+    [whitespace]:  
+b
+    [identifier]: b2DrawFlag
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+"
+    [string]: "b2Draw::e_shapeBit"
+,
+    [inline]: ,
+
+
+    [whitespace]: 
+  
+"
+    [string]: "b2Draw::e_jointBit"
+,
+    [inline]: ,
+
+
+    [whitespace]: 
+  
+"
+    [string]: "b2Draw::e_aabbBit"
+,
+    [inline]: ,
+
+
+    [whitespace]: 
+  
+"
+    [string]: "b2Draw::e_pairBit"
+,
+    [inline]: ,
+
+
+    [whitespace]: 
+  
+"
+    [string]: "b2Draw::e_centerOfMassBit"
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Draw
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetFlags
+(
+    [inline]: (
+u
+    [identifier]: unsigned
+ 
+    [whitespace]:  
+l
+    [identifier]: long
+ 
+    [whitespace]:  
+f
+    [identifier]: flags
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+u
+    [identifier]: unsigned
+ 
+    [whitespace]:  
+l
+    [identifier]: long
+ 
+    [whitespace]:  
+G
+    [identifier]: GetFlags
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+A
+    [identifier]: AppendFlags
+(
+    [inline]: (
+u
+    [identifier]: unsigned
+ 
+    [whitespace]:  
+l
+    [identifier]: long
+ 
+    [whitespace]:  
+f
+    [identifier]: flags
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+C
+    [identifier]: ClearFlags
+(
+    [inline]: (
+u
+    [identifier]: unsigned
+ 
+    [whitespace]:  
+l
+    [identifier]: long
+ 
+    [whitespace]:  
+f
+    [identifier]: flags
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+[
+    [inline]: [
+J
+    [identifier]: JSImplementation
+=
+    [inline]: =
+"
+    [string]: "b2Draw"
+]
+    [inline]: ]
+
+
+    [whitespace]: 
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+J
+    [identifier]: JSDraw
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+J
+    [identifier]: JSDraw
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+D
+    [identifier]: DrawPolygon
+(
+    [inline]: (
+[
+    [inline]: [
+C
+    [identifier]: Const
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+v
+    [identifier]: vertices
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+l
+    [identifier]: long
+ 
+    [whitespace]:  
+v
+    [identifier]: vertexCount
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Color
+ 
+    [whitespace]:  
+c
+    [identifier]: color
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+D
+    [identifier]: DrawSolidPolygon
+(
+    [inline]: (
+[
+    [inline]: [
+C
+    [identifier]: Const
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+v
+    [identifier]: vertices
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+l
+    [identifier]: long
+ 
+    [whitespace]:  
+v
+    [identifier]: vertexCount
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Color
+ 
+    [whitespace]:  
+c
+    [identifier]: color
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+D
+    [identifier]: DrawCircle
+(
+    [inline]: (
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+c
+    [identifier]: center
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+r
+    [identifier]: radius
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Color
+ 
+    [whitespace]:  
+c
+    [identifier]: color
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+D
+    [identifier]: DrawSolidCircle
+(
+    [inline]: (
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+c
+    [identifier]: center
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+r
+    [identifier]: radius
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+a
+    [identifier]: axis
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Color
+ 
+    [whitespace]:  
+c
+    [identifier]: color
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+D
+    [identifier]: DrawSegment
+(
+    [inline]: (
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+p
+    [identifier]: p1
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+p
+    [identifier]: p2
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Color
+ 
+    [whitespace]:  
+c
+    [identifier]: color
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+D
+    [identifier]: DrawTransform
+(
+    [inline]: (
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Transform
+ 
+    [whitespace]:  
+x
+    [identifier]: xf
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+D
+    [identifier]: DrawPoint
+(
+    [inline]: (
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+p
+    [identifier]: p
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+s
+    [identifier]: size
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Color
+ 
+    [whitespace]:  
+c
+    [identifier]: color
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2FrictionJoint
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+G
+    [identifier]: GetLocalAnchorA
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+G
+    [identifier]: GetLocalAnchorB
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetMaxForce
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+f
+    [identifier]: force
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetMaxForce
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetMaxTorque
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+t
+    [identifier]: torque
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetMaxTorque
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+b
+    [identifier]: b2FrictionJoint
+ 
+    [whitespace]:  
+i
+    [identifier]: implements
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Joint
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2FrictionJointDef
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2FrictionJointDef
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+I
+    [identifier]: Initialize
+(
+    [inline]: (
+b
+    [identifier]: b2Body
+ 
+    [whitespace]:  
+b
+    [identifier]: bodyA
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Body
+ 
+    [whitespace]:  
+b
+    [identifier]: bodyB
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+a
+    [identifier]: anchor
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+l
+    [identifier]: localAnchorA
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+l
+    [identifier]: localAnchorB
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+m
+    [identifier]: maxForce
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+m
+    [identifier]: maxTorque
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+b
+    [identifier]: b2FrictionJointDef
+ 
+    [whitespace]:  
+i
+    [identifier]: implements
+ 
+    [whitespace]:  
+b
+    [identifier]: b2JointDef
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2GearJoint
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: b2Joint
+ 
+    [whitespace]:  
+G
+    [identifier]: GetJoint1
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: b2Joint
+ 
+    [whitespace]:  
+G
+    [identifier]: GetJoint2
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetRatio
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+r
+    [identifier]: ratio
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetRatio
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+b
+    [identifier]: b2GearJoint
+ 
+    [whitespace]:  
+i
+    [identifier]: implements
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Joint
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2GearJointDef
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2GearJointDef
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Joint
+ 
+    [whitespace]:  
+j
+    [identifier]: joint1
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Joint
+ 
+    [whitespace]:  
+j
+    [identifier]: joint2
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+r
+    [identifier]: ratio
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+b
+    [identifier]: b2GearJointDef
+ 
+    [whitespace]:  
+i
+    [identifier]: implements
+ 
+    [whitespace]:  
+b
+    [identifier]: b2JointDef
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2JointEdge
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2JointEdge
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Body
+ 
+    [whitespace]:  
+o
+    [identifier]: other
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Joint
+ 
+    [whitespace]:  
+j
+    [identifier]: joint
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2JointEdge
+ 
+    [whitespace]:  
+p
+    [identifier]: prev
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2JointEdge
+ 
+    [whitespace]:  
+n
+    [identifier]: next
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+e
+    [identifier]: enum
+ 
+    [whitespace]:  
+b
+    [identifier]: b2ManifoldType
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+"
+    [string]: "b2Manifold::e_circles"
+,
+    [inline]: ,
+
+
+    [whitespace]: 
+  
+"
+    [string]: "b2Manifold::e_faceA"
+,
+    [inline]: ,
+
+
+    [whitespace]: 
+  
+"
+    [string]: "b2Manifold::e_faceB"
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Manifold
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Manifold
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+/
+    [comment]: // length 2
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+,
+    [inline]: ,
+B
+    [identifier]: BoundsChecked
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2ManifoldPoint
+[
+    [inline]: [
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+p
+    [identifier]: points
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+l
+    [identifier]: localNormal
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+l
+    [identifier]: localPoint
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2ManifoldType
+ 
+    [whitespace]:  
+t
+    [identifier]: type
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+l
+    [identifier]: long
+ 
+    [whitespace]:  
+p
+    [identifier]: pointCount
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2WorldManifold
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2WorldManifold
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+I
+    [identifier]: Initialize
+(
+    [inline]: (
+[
+    [inline]: [
+C
+    [identifier]: Const
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Manifold
+ 
+    [whitespace]:  
+m
+    [identifier]: manifold
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Transform
+ 
+    [whitespace]:  
+x
+    [identifier]: xfA
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+r
+    [identifier]: radiusA
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Transform
+ 
+    [whitespace]:  
+x
+    [identifier]: xfB
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+r
+    [identifier]: radiusB
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+n
+    [identifier]: normal
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+/
+    [comment]: // length 2
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+,
+    [inline]: ,
+B
+    [identifier]: BoundsChecked
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+[
+    [inline]: [
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+p
+    [identifier]: points
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+/
+    [comment]: // length 2
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+B
+    [identifier]: BoundsChecked
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+[
+    [inline]: [
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+s
+    [identifier]: separations
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2ManifoldPoint
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2ManifoldPoint
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+l
+    [identifier]: localPoint
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+n
+    [identifier]: normalImpulse
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+t
+    [identifier]: tangentImpulse
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2ContactID
+ 
+    [whitespace]:  
+i
+    [identifier]: id
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Mat22
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Mat22
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Mat22
+(
+    [inline]: (
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+c
+    [identifier]: c1
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+c
+    [identifier]: c2
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Mat22
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+a
+    [identifier]: a11
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+a
+    [identifier]: a12
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+a
+    [identifier]: a21
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+a
+    [identifier]: a22
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: Set
+(
+    [inline]: (
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+c
+    [identifier]: c1
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+c
+    [identifier]: c2
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetIdentity
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetZero
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Mat22
+ 
+    [whitespace]:  
+G
+    [identifier]: GetInverse
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+S
+    [identifier]: Solve
+(
+    [inline]: (
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+b
+    [identifier]: b
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+e
+    [identifier]: ex
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+e
+    [identifier]: ey
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Mat33
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Mat33
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Mat33
+(
+    [inline]: (
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec3
+ 
+    [whitespace]:  
+c
+    [identifier]: c1
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec3
+ 
+    [whitespace]:  
+c
+    [identifier]: c2
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec3
+ 
+    [whitespace]:  
+c
+    [identifier]: c3
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetZero
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec3
+ 
+    [whitespace]:  
+S
+    [identifier]: Solve33
+(
+    [inline]: (
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec3
+ 
+    [whitespace]:  
+b
+    [identifier]: b
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+S
+    [identifier]: Solve22
+(
+    [inline]: (
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+b
+    [identifier]: b
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+G
+    [identifier]: GetInverse22
+(
+    [inline]: (
+b
+    [identifier]: b2Mat33
+ 
+    [whitespace]:  
+M
+    [identifier]: M
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+G
+    [identifier]: GetSymInverse33
+(
+    [inline]: (
+b
+    [identifier]: b2Mat33
+ 
+    [whitespace]:  
+M
+    [identifier]: M
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec3
+ 
+    [whitespace]:  
+e
+    [identifier]: ex
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec3
+ 
+    [whitespace]:  
+e
+    [identifier]: ey
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec3
+ 
+    [whitespace]:  
+e
+    [identifier]: ez
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2MouseJoint
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetTarget
+(
+    [inline]: (
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+t
+    [identifier]: target
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+G
+    [identifier]: GetTarget
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetMaxForce
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+f
+    [identifier]: force
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetMaxForce
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetStiffness
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+s
+    [identifier]: stiffness
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetStiffness
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetDamping
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+d
+    [identifier]: damping
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetDamping
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+b
+    [identifier]: b2MouseJoint
+ 
+    [whitespace]:  
+i
+    [identifier]: implements
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Joint
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2MouseJointDef
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2MouseJointDef
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+t
+    [identifier]: target
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+m
+    [identifier]: maxForce
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+s
+    [identifier]: stiffness
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+d
+    [identifier]: damping
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+b
+    [identifier]: b2MouseJointDef
+ 
+    [whitespace]:  
+i
+    [identifier]: implements
+ 
+    [whitespace]:  
+b
+    [identifier]: b2JointDef
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2PolygonShape
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2PolygonShape
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: Set
+(
+    [inline]: (
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+v
+    [identifier]: vertices
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+l
+    [identifier]: long
+ 
+    [whitespace]:  
+v
+    [identifier]: vertexCount
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetAsBox
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+h
+    [identifier]: hx
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+h
+    [identifier]: hy
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetAsBox
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+h
+    [identifier]: hx
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+h
+    [identifier]: hy
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+c
+    [identifier]: center
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+a
+    [identifier]: angle
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+m
+    [identifier]: m_centroid
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+/
+    [comment]: // length 8
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+,
+    [inline]: ,
+B
+    [identifier]: BoundsChecked
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+[
+    [inline]: [
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+m
+    [identifier]: m_vertices
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+/
+    [comment]: // length 8
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+,
+    [inline]: ,
+B
+    [identifier]: BoundsChecked
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+[
+    [inline]: [
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+m
+    [identifier]: m_normals
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+l
+    [identifier]: long
+ 
+    [whitespace]:  
+m
+    [identifier]: m_count
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+b
+    [identifier]: b2PolygonShape
+ 
+    [whitespace]:  
+i
+    [identifier]: implements
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Shape
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2PrismaticJoint
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+G
+    [identifier]: GetLocalAnchorA
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+G
+    [identifier]: GetLocalAnchorB
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+G
+    [identifier]: GetLocalAxisA
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetReferenceAngle
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetJointTranslation
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetJointSpeed
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+I
+    [identifier]: IsLimitEnabled
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+E
+    [identifier]: EnableLimit
+(
+    [inline]: (
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+f
+    [identifier]: flag
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetLowerLimit
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetUpperLimit
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetLimits
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+l
+    [identifier]: lower
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+u
+    [identifier]: upper
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+I
+    [identifier]: IsMotorEnabled
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+E
+    [identifier]: EnableMotor
+(
+    [inline]: (
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+f
+    [identifier]: flag
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetMotorSpeed
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+s
+    [identifier]: speed
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetMotorSpeed
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetMaxMotorForce
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+f
+    [identifier]: force
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetMaxMotorForce
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetMotorForce
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+i
+    [identifier]: inv_dt
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+b
+    [identifier]: b2PrismaticJoint
+ 
+    [whitespace]:  
+i
+    [identifier]: implements
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Joint
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2PrismaticJointDef
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2PrismaticJointDef
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+I
+    [identifier]: Initialize
+(
+    [inline]: (
+b
+    [identifier]: b2Body
+ 
+    [whitespace]:  
+b
+    [identifier]: bodyA
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Body
+ 
+    [whitespace]:  
+b
+    [identifier]: bodyB
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+a
+    [identifier]: anchor
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+a
+    [identifier]: axis
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+l
+    [identifier]: localAnchorA
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+l
+    [identifier]: localAnchorB
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+l
+    [identifier]: localAxisA
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+r
+    [identifier]: referenceAngle
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+e
+    [identifier]: enableLimit
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+l
+    [identifier]: lowerTranslation
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+u
+    [identifier]: upperTranslation
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+e
+    [identifier]: enableMotor
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+m
+    [identifier]: maxMotorForce
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+m
+    [identifier]: motorSpeed
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+b
+    [identifier]: b2PrismaticJointDef
+ 
+    [whitespace]:  
+i
+    [identifier]: implements
+ 
+    [whitespace]:  
+b
+    [identifier]: b2JointDef
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Profile
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+s
+    [identifier]: step
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+c
+    [identifier]: collide
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+s
+    [identifier]: solve
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+s
+    [identifier]: solveInit
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+s
+    [identifier]: solveVelocity
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+s
+    [identifier]: solvePosition
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+b
+    [identifier]: broadphase
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+s
+    [identifier]: solveTOI
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2PulleyJoint
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+G
+    [identifier]: GetGroundAnchorA
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+G
+    [identifier]: GetGroundAnchorB
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetLengthA
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetLengthB
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetRatio
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetCurrentLengthA
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetCurrentLengthB
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+b
+    [identifier]: b2PulleyJoint
+ 
+    [whitespace]:  
+i
+    [identifier]: implements
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Joint
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2PulleyJointDef
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2PulleyJointDef
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+I
+    [identifier]: Initialize
+(
+    [inline]: (
+b
+    [identifier]: b2Body
+ 
+    [whitespace]:  
+b
+    [identifier]: bodyA
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Body
+ 
+    [whitespace]:  
+b
+    [identifier]: bodyB
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+g
+    [identifier]: groundAnchorA
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+g
+    [identifier]: groundAnchorB
+,
+    [inline]: ,
+
+
+    [whitespace]: 
+                  
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+a
+    [identifier]: anchorA
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+a
+    [identifier]: anchorB
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+r
+    [identifier]: ratio
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+g
+    [identifier]: groundAnchorA
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+g
+    [identifier]: groundAnchorB
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+l
+    [identifier]: localAnchorA
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+l
+    [identifier]: localAnchorB
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+l
+    [identifier]: lengthA
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+l
+    [identifier]: lengthB
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+r
+    [identifier]: ratio
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+b
+    [identifier]: b2PulleyJointDef
+ 
+    [whitespace]:  
+i
+    [identifier]: implements
+ 
+    [whitespace]:  
+b
+    [identifier]: b2JointDef
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2RayCastInput
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+p
+    [identifier]: p1
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+p
+    [identifier]: p2
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+m
+    [identifier]: maxFraction
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2RayCastOutput
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+n
+    [identifier]: normal
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+f
+    [identifier]: fraction
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2RevoluteJoint
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+G
+    [identifier]: GetLocalAnchorA
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+G
+    [identifier]: GetLocalAnchorB
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetReferenceAngle
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetJointAngle
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetJointSpeed
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+I
+    [identifier]: IsLimitEnabled
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+E
+    [identifier]: EnableLimit
+(
+    [inline]: (
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+f
+    [identifier]: flag
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetLowerLimit
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetUpperLimit
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetLimits
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+l
+    [identifier]: lower
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+u
+    [identifier]: upper
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+I
+    [identifier]: IsMotorEnabled
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+E
+    [identifier]: EnableMotor
+(
+    [inline]: (
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+f
+    [identifier]: flag
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetMotorSpeed
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+s
+    [identifier]: speed
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetMotorSpeed
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetMaxMotorTorque
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+t
+    [identifier]: torque
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetMaxMotorTorque
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetMotorTorque
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+i
+    [identifier]: inv_dt
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+b
+    [identifier]: b2RevoluteJoint
+ 
+    [whitespace]:  
+i
+    [identifier]: implements
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Joint
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2RevoluteJointDef
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2RevoluteJointDef
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+I
+    [identifier]: Initialize
+(
+    [inline]: (
+b
+    [identifier]: b2Body
+ 
+    [whitespace]:  
+b
+    [identifier]: bodyA
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Body
+ 
+    [whitespace]:  
+b
+    [identifier]: bodyB
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+a
+    [identifier]: anchor
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+l
+    [identifier]: localAnchorA
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+l
+    [identifier]: localAnchorB
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+r
+    [identifier]: referenceAngle
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+e
+    [identifier]: enableLimit
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+l
+    [identifier]: lowerAngle
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+u
+    [identifier]: upperAngle
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+e
+    [identifier]: enableMotor
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+m
+    [identifier]: motorSpeed
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+m
+    [identifier]: maxMotorTorque
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+b
+    [identifier]: b2RevoluteJointDef
+ 
+    [whitespace]:  
+i
+    [identifier]: implements
+ 
+    [whitespace]:  
+b
+    [identifier]: b2JointDef
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Rot
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Rot
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Rot
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+a
+    [identifier]: angle
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: Set
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+a
+    [identifier]: angle
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetIdentity
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetAngle
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+G
+    [identifier]: GetXAxis
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+G
+    [identifier]: GetYAxis
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+s
+    [identifier]: s
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+c
+    [identifier]: c
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2WheelJoint
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+G
+    [identifier]: GetLocalAnchorA
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+G
+    [identifier]: GetLocalAnchorB
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+G
+    [identifier]: GetLocalAxisA
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetJointTranslation
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetJointLinearSpeed
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetJointAngle
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetJointAngularSpeed
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+I
+    [identifier]: IsLimitEnabled
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+E
+    [identifier]: EnableLimit
+(
+    [inline]: (
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+f
+    [identifier]: flag
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetLowerLimit
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetUpperLimit
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetLimits
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+l
+    [identifier]: lower
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+u
+    [identifier]: upper
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+I
+    [identifier]: IsMotorEnabled
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+E
+    [identifier]: EnableMotor
+(
+    [inline]: (
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+f
+    [identifier]: flag
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetMotorSpeed
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+s
+    [identifier]: speed
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetMotorSpeed
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetMaxMotorTorque
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+t
+    [identifier]: torque
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetMaxMotorTorque
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetMotorTorque
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+i
+    [identifier]: inv_dt
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetStiffness
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+s
+    [identifier]: stiffness
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetStiffness
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetDamping
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+d
+    [identifier]: damping
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetDamping
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+b
+    [identifier]: b2WheelJoint
+ 
+    [whitespace]:  
+i
+    [identifier]: implements
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Joint
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2WheelJointDef
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2WheelJointDef
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+I
+    [identifier]: Initialize
+(
+    [inline]: (
+b
+    [identifier]: b2Body
+ 
+    [whitespace]:  
+b
+    [identifier]: bodyA
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Body
+ 
+    [whitespace]:  
+b
+    [identifier]: bodyB
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+a
+    [identifier]: anchor
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+a
+    [identifier]: axis
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+l
+    [identifier]: localAnchorA
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+l
+    [identifier]: localAnchorB
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+l
+    [identifier]: localAxisA
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+e
+    [identifier]: enableLimit
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+l
+    [identifier]: lowerTranslation
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+u
+    [identifier]: upperTranslation
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+e
+    [identifier]: enableMotor
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+m
+    [identifier]: maxMotorTorque
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+m
+    [identifier]: motorSpeed
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+s
+    [identifier]: stiffness
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+d
+    [identifier]: damping
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+b
+    [identifier]: b2WheelJointDef
+ 
+    [whitespace]:  
+i
+    [identifier]: implements
+ 
+    [whitespace]:  
+b
+    [identifier]: b2JointDef
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2MotorJoint
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetLinearOffset
+(
+    [inline]: (
+[
+    [inline]: [
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+l
+    [identifier]: linearOffset
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+G
+    [identifier]: GetLinearOffset
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetAngularOffset
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+a
+    [identifier]: angularOffset
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetAngularOffset
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetMaxForce
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+f
+    [identifier]: force
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetMaxForce
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetMaxTorque
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+t
+    [identifier]: torque
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetMaxTorque
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetCorrectionFactor
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+f
+    [identifier]: factor
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+G
+    [identifier]: GetCorrectionFactor
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+b
+    [identifier]: b2MotorJoint
+ 
+    [whitespace]:  
+i
+    [identifier]: implements
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Joint
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2MotorJointDef
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2MotorJointDef
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+I
+    [identifier]: Initialize
+(
+    [inline]: (
+b
+    [identifier]: b2Body
+ 
+    [whitespace]:  
+b
+    [identifier]: bodyA
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Body
+ 
+    [whitespace]:  
+b
+    [identifier]: bodyB
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+l
+    [identifier]: linearOffset
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+a
+    [identifier]: angularOffset
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+m
+    [identifier]: maxForce
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+m
+    [identifier]: maxTorque
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+c
+    [identifier]: correctionFactor
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+b
+    [identifier]: b2MotorJointDef
+ 
+    [whitespace]:  
+i
+    [identifier]: implements
+ 
+    [whitespace]:  
+b
+    [identifier]: b2JointDef
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+e
+    [identifier]: enum
+ 
+    [whitespace]:  
+b
+    [identifier]: b2PointState
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+"
+    [string]: "b2_nullState"
+,
+    [inline]: ,
+
+
+    [whitespace]: 
+  
+"
+    [string]: "b2_addState"
+,
+    [inline]: ,
+
+
+    [whitespace]: 
+  
+"
+    [string]: "b2_persistState"
+,
+    [inline]: ,
+
+
+    [whitespace]: 
+  
+"
+    [string]: "b2_removeState"
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+e
+    [identifier]: enum
+ 
+    [whitespace]:  
+b
+    [identifier]: b2StretchingModel
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+	
+"
+    [string]: "b2_pbdStretchingModel"
+,
+    [inline]: ,
+
+
+    [whitespace]: 
+	
+"
+    [string]: "b2_xpbdStretchingModel"
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+e
+    [identifier]: enum
+ 
+    [whitespace]:  
+b
+    [identifier]: b2BendingModel
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+	
+"
+    [string]: "b2_springAngleBendingModel"
+,
+    [inline]: ,
+
+
+    [whitespace]: 
+	
+"
+    [string]: "b2_pbdAngleBendingModel"
+,
+    [inline]: ,
+
+
+    [whitespace]: 
+	
+"
+    [string]: "b2_xpbdAngleBendingModel"
+,
+    [inline]: ,
+
+
+    [whitespace]: 
+	
+"
+    [string]: "b2_pbdDistanceBendingModel"
+,
+    [inline]: ,
+
+
+    [whitespace]: 
+	
+"
+    [string]: "b2_pbdHeightBendingModel"
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2RopeTuning
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2RopeTuning
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+	
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2StretchingModel
+ 
+    [whitespace]:  
+s
+    [identifier]: stretchingModel
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+	
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2BendingModel
+ 
+    [whitespace]:  
+b
+    [identifier]: bendingModel
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+	
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+d
+    [identifier]: damping
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+	
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+s
+    [identifier]: stretchStiffness
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+	
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+s
+    [identifier]: stretchHertz
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+	
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+s
+    [identifier]: stretchDamping
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+	
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+b
+    [identifier]: bendStiffness
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+	
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+b
+    [identifier]: bendHertz
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+	
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+b
+    [identifier]: bendDamping
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+	
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+i
+    [identifier]: isometric
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+	
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+f
+    [identifier]: fixedEffectiveMass
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+	
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: boolean
+ 
+    [whitespace]:  
+w
+    [identifier]: warmStart
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2RopeDef
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2RopeDef
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+p
+    [identifier]: position
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+	
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+v
+    [identifier]: vertices
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+	
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+l
+    [identifier]: long
+ 
+    [whitespace]:  
+c
+    [identifier]: count
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+/
+    [comment]: // WebIDL binder doesn't seem to provide a way to model "float*",
+
+
+    [whitespace]: 
+  
+/
+    [comment]: // so I've bound this manually in glue_stub.{cpp,js}
+
+
+    [whitespace]: 
+	
+/
+    [comment]: // attribute float[] masses;
+
+
+    [whitespace]: 
+	
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+g
+    [identifier]: gravity
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+	
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2RopeTuning
+ 
+    [whitespace]:  
+t
+    [identifier]: tuning
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Rope
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Rope
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+C
+    [identifier]: Create
+(
+    [inline]: (
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2RopeDef
+ 
+    [whitespace]:  
+d
+    [identifier]: def
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: SetTuning
+(
+    [inline]: (
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2RopeTuning
+ 
+    [whitespace]:  
+t
+    [identifier]: tuning
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+S
+    [identifier]: Step
+(
+    [inline]: (
+f
+    [identifier]: float
+ 
+    [whitespace]:  
+t
+    [identifier]: timeStep
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+l
+    [identifier]: long
+ 
+    [whitespace]:  
+i
+    [identifier]: iterations
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+p
+    [identifier]: position
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+R
+    [identifier]: Reset
+(
+    [inline]: (
+[
+    [inline]: [
+C
+    [identifier]: Const
+,
+    [inline]: ,
+ 
+    [whitespace]:  
+R
+    [identifier]: Ref
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+p
+    [identifier]: position
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+D
+    [identifier]: Draw
+(
+    [inline]: (
+b
+    [identifier]: b2Draw
+ 
+    [whitespace]:  
+d
+    [identifier]: draw
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+  
+/
+    [comment]: // the following are private methods or properties. I decided not to expose them,
+
+
+    [whitespace]: 
+  
+/
+    [comment]: // as they included references to symbols such as b2RopeStretch and b2RopeBend,
+
+
+    [whitespace]: 
+  
+/
+    [comment]: // which aren't even published in box2d/include.
+
+
+    [whitespace]: 
+  
+/
+    [comment]: // if one day you find a reason to expose them: feel free to use this as a starting point.
+
+
+    [whitespace]: 
+
+  
+/
+    [comment]: // void SolveStretch_PBD();
+
+
+    [whitespace]: 
+	
+/
+    [comment]: // void SolveStretch_XPBD(float dt);
+
+
+    [whitespace]: 
+	
+/
+    [comment]: // void SolveBend_PBD_Angle();
+
+
+    [whitespace]: 
+	
+/
+    [comment]: // void SolveBend_XPBD_Angle(float dt);
+
+
+    [whitespace]: 
+	
+/
+    [comment]: // void SolveBend_PBD_Distance();
+
+
+    [whitespace]: 
+	
+/
+    [comment]: // void SolveBend_PBD_Height();
+
+
+    [whitespace]: 
+	
+/
+    [comment]: // void ApplyBendForces(float dt);
+
+
+    [whitespace]: 
+
+	
+/
+    [comment]: // [Value] attribute b2Vec2 m_position;
+
+
+    [whitespace]: 
+
+	
+/
+    [comment]: // attribute long m_count;
+
+
+    [whitespace]: 
+	
+/
+    [comment]: // attribute long m_stretchCount;
+
+
+    [whitespace]: 
+	
+/
+    [comment]: // attribute long m_bendCount;
+
+
+    [whitespace]: 
+
+  
+/
+    [comment]: // attribute b2RopeStretch m_stretchConstraints;
+
+
+    [whitespace]: 
+	
+/
+    [comment]: // attribute b2RopeBend m_bendConstraints;
+
+
+    [whitespace]: 
+
+	
+/
+    [comment]: // attribute b2Vec2 m_bindPositions;
+
+
+    [whitespace]: 
+	
+/
+    [comment]: // attribute b2Vec2 m_ps;
+
+
+    [whitespace]: 
+	
+/
+    [comment]: // attribute b2Vec2 m_p0s;
+
+
+    [whitespace]: 
+	
+/
+    [comment]: // attribute b2Vec2 m_vs;
+
+
+    [whitespace]: 
+
+	
+/
+    [comment]: // attribute float m_invMasses;
+
+
+    [whitespace]: 
+	
+/
+    [comment]: // [Value] attribute b2Vec2 m_gravity;
+
+
+    [whitespace]: 
+
+	
+/
+    [comment]: // [Value] attribute b2RopeTuning m_tuning;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+
+i
+    [identifier]: interface
+ 
+    [whitespace]:  
+b
+    [identifier]: b2ClipVertex
+ 
+    [whitespace]:  
+{
+    [inline]: {
+
+
+    [whitespace]: 
+  
+v
+    [identifier]: void
+ 
+    [whitespace]:  
+b
+    [identifier]: b2ClipVertex
+(
+    [inline]: (
+)
+    [inline]: )
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+  
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2Vec2
+ 
+    [whitespace]:  
+v
+    [identifier]: v
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+	
+[
+    [inline]: [
+V
+    [identifier]: Value
+]
+    [inline]: ]
+ 
+    [whitespace]:  
+a
+    [identifier]: attribute
+ 
+    [whitespace]:  
+b
+    [identifier]: b2ContactID
+ 
+    [whitespace]:  
+i
+    [identifier]: id
+;
+    [inline]: ;
+
+
+    [whitespace]: 
+
+}
+    [inline]: }
+;
+    [inline]: ;
