@@ -7,8 +7,6 @@ import 'package:string_unescape/string_unescape.dart';
 
 import 'error.dart';
 
-var out = '';
-
 // There are all 'sticky', with /y at the end - we use Pattern.matchAsPrefix 
 // with substring and check that any match starts at 0 to replicate 'stickyness'.
 //
@@ -153,11 +151,8 @@ List<Token> tokenise(String str) {
           trivia: trivia,
           line: line,
           index: index);
-      out += '    [${token.type}]: ${token.value}\n';
       tokens.add(token);
-      if (!noFlushTrivia) {
-        trivia = "";
-      }
+      if (!noFlushTrivia) trivia = "";
       return lastCharIndex + result.end;
     }
     return -1;
@@ -166,8 +161,6 @@ List<Token> tokenise(String str) {
   while (lastCharIndex < str.length) {
     final nextChar = str[lastCharIndex];
     var result = -1;
-    // .replaceAll("\n", r"\n")
-    out += nextChar+'\n';
 
     if (RegExp(r'[\t\n\r ]').matchAsPrefix(nextChar) != null) {
       result = attemptTokenMatch('whitespace', noFlushTrivia: true);
@@ -206,7 +199,6 @@ List<Token> tokenise(String str) {
     for (final punctuation in punctuations) {
       if (str.startsWith(punctuation, lastCharIndex)) {
         var token = Token(type: 'inline', value: punctuation, trivia: trivia, line: line, index: index,);
-        out += '    [${token.type}]: ${token.value}\n';
         tokens.add(token);
         trivia = '';
         lastCharIndex += punctuation.length;
@@ -233,8 +225,6 @@ List<Token> tokenise(String str) {
     trivia: trivia,
     line: line,
     index: index,));
-
-  File('out.txt').writeAsStringSync(out);
 
   return tokens;
 }
