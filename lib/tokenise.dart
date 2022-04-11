@@ -1,21 +1,20 @@
 // These regular expressions use the sticky flag so they will only match at
 // the current location (ie. the offset of lastIndex).
-import 'dart:io';
 
-import 'package:box2d_idl_parser/token.dart';
 import 'package:string_unescape/string_unescape.dart';
+import 'package:webidl2js_dart_port/token.dart';
 
 import 'error.dart';
 
-// There are all 'sticky', with /y at the end - we use Pattern.matchAsPrefix 
+// There are all 'sticky', with /y at the end - we use Pattern.matchAsPrefix
 // with substring and check that any match starts at 0 to replicate 'stickyness'.
 //
 // /g means regexp should be tested against all possible matches in a string
 final tokenRe = {
   // This expression uses a lookahead assertion to catch false matches
   // against integers early.
-  'decimal':
-      RegExp(r'-?(?=[0-9]*\.|[0-9]+[eE])(([0-9]+\.[0-9]*|[0-9]*\.[0-9]+)([Ee][-+]?[0-9]+)?|[0-9]+[Ee][-+]?[0-9]+)'),
+  'decimal': RegExp(
+      r'-?(?=[0-9]*\.|[0-9]+[eE])(([0-9]+\.[0-9]*|[0-9]*\.[0-9]+)([Ee][-+]?[0-9]+)?|[0-9]+[Ee][-+]?[0-9]+)'),
   'integer': RegExp(r'-?(0([Xx][0-9A-Fa-f]+|[0-7]*)|[1-9][0-9]*)'),
   'identifier': RegExp(r'[_-]?[A-Za-z][0-9A-Z_a-z-]*'),
   'string': RegExp(r'"[^"]*"'),
@@ -186,7 +185,8 @@ List<Token> tokenise(String str) {
           if (reserved.contains(token.value)) {
             final message =
                 '${unescape(token.value)} is a reserved identifier and must not be used.';
-            throw syntaxError(tokens, lastIndex, null, message); // TODO: turn this into a [WebIDLParseError]
+            throw syntaxError(tokens, lastIndex, null,
+                message); // TODO: turn this into a [WebIDLParseError]
           } else if (nonRegexTerminals.contains(token.value)) {
             token.type = 'inline';
           }
@@ -198,7 +198,13 @@ List<Token> tokenise(String str) {
 
     for (final punctuation in punctuations) {
       if (str.startsWith(punctuation, lastCharIndex)) {
-        var token = Token(type: 'inline', value: punctuation, trivia: trivia, line: line, index: index,);
+        var token = Token(
+          type: 'inline',
+          value: punctuation,
+          trivia: trivia,
+          line: line,
+          index: index,
+        );
         tokens.add(token);
         trivia = '';
         lastCharIndex += punctuation.length;
@@ -219,12 +225,13 @@ List<Token> tokenise(String str) {
   }
 
   // remaining trivia as eof
-  tokens.add(
-    Token(type: 'eof',
+  tokens.add(Token(
+    type: 'eof',
     value: '',
     trivia: trivia,
     line: line,
-    index: index,));
+    index: index,
+  ));
 
   return tokens;
 }
