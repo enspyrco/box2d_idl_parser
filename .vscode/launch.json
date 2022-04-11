@@ -5,9 +5,9 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "box2d_idl_parser",
+      "name": "webidl2js_dart_port",
       "request": "launch",
-      "program": "bin/box2d_idl_parser.dart",
+      "program": "bin/webidl2js_dart_port.dart",
       "type": "dart"
     }
   ]

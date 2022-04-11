@@ -1,22 +1,11 @@
-# box2d_idl_parser
+# webidl2js_dart_port
 
-## emscripten
+`webidl2.js` uses JS [sticky] RegExp in combination with [lastIndex].
 
-[box2d-wasm] uses emscripten’s [WebIDL Binder] to create JS bindings.
+As there does not seem to be an equivalent for the JS [sticky] RegExp, we use Dart’s `substring`, `firstMatch` and check that `result.start == 0` to get the same result.
 
-I added the file called `webidl_binder_json.py` to $
+See: Notion > Dart > [RegExp] for more info.
 
-First run this to get the location of the emscripten tools (assumes homebrew install):
-
-```sh
-export EMSCRIPTEN_TOOLS="$(realpath "$(dirname "$(realpath "$(which emcc)")")/../libexec/tools")"
-```
-
-Then run the python:
-
-```sh
-python3 $EMSCRIPTEN_TOOLS/webidl_binder_json.py Box2D.idl
-```
-
-[box2d-wasm]: https://github.com/Birch-san/box2d-wasm
-[WebIDL Binder]: https://emscripten.org/docs/porting/connecting_cpp_and_javascript/WebIDL-Binder.html
+[sticky]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/sticky
+[lastIndex]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/lastIndex
+[RegExp]: https://www.notion.so/reference-material/RegExp-f69ec2025e194dfa9927d19003f22b11
